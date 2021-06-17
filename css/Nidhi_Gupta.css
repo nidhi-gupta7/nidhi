@@ -1,0 +1,154 @@
+.Hidden {
+    display: none;
+}
+
+/*This is just for home page*/
+header {
+    position: relative;
+    left: 20%;
+    background-color: rgb(134, 224, 252);
+    width: 60%;
+    margin: 0;
+}
+
+header h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 400%;
+    color: blue;
+}
+
+header img {
+    display: inline-block;
+    position: relative;
+    left: 70%;
+    width: 30%;
+    border-radius: 50%;
+}
+/*Rules for common elements of all pages*/
+
+.AdjacentToNav {
+    display: inline-block;
+    position: relative;
+    left: 20%;
+    float: none;
+    width: 60%;
+    min-width: 480px;
+    max-width: 1980px;
+}
+
+.LeftNav {
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    line-height: 1.17em;
+    font-size: 120%;
+    width: 20%;
+    height: 100%;
+    background-color: peachpuff;
+}
+
+nav {
+    position: relative;
+    top: 25%;
+}
+
+.LeftNav a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: teal;
+    margin-top: 0;
+}
+
+.LeftNav a:visited {
+    color: black;
+}
+
+.LeftNav a:hover {
+    color: red;
+    background-color: yellow;
+}
+
+.LeftNav a:focus {
+    color: red ;
+    background-color: yellow;
+    border: none;
+}
+
+.LeftNav a .LongTxt {
+    line-height: 1em;
+}
+
+.active {
+    background-color: white;
+}
+
+.RightBar {
+    background-color: peachpuff;
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    float: none;
+    width: 20%;
+    height: 100%;
+}
+
+.RightBar img {
+    width: 80%;
+    border-radius: 50%;
+    position: relative;
+    left: 9%;
+}
+
+.RightBar h1 {
+    font-size: 2em;
+    display: inline-block;
+    padding: 0;
+    margin: 20px auto;
+}
+
+
+h2 {
+    background-color: black;
+    color: yellow;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 15px 5px;
+    margin: 10px auto;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    bottom: 0;
+    left: 20%;
+}
+/* The above css rules are for the common elements*/
+
+/* The rules below are for individual and discreet*/
+
+/* Home Page */
+
+article {
+    font-size: 1.3em;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#Name { /* rule for "- Nidhi" */
+    font-size: 1.3em;
+    text-align: right;
+    float: right;
+    position: relative;
+    right: 10%;
+}
+
+/* About Me Page */
+
+h3 {
+    font-size: 1.3em;
+}

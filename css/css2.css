@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    display: block;
+    width: 60%;
+    margin: 3% auto;
+    padding: 0;
+    text-align: center;
+    font-size: 3em;
+    color: aqua;
+}
+
+header nav {
+    display: block;
+    width: 90%;
+    margin: 1% auto;
+    text-align: center;
+    font-size: 1em;
+}
+
+header nav a {
+    color: rgba(0, 0, 0, 0.7); /*change color accordingly*/
+    text-decoration: none;
+    margin: 1%;
+    text-align: center;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 1);
+}
+
+.welcome {
+    background-image: url(../imgs/home-sample-1.jpg);
+    background-size: contain; /*To be modified*/
+    margin: 2% 0;
+    padding: 20% 0
+}
+
+.welcome h2 {
+    display: block;
+    width: 30%;
+    margin: 1% auto;
+    padding: 1% 0;
+    text-align: center;
+    font-size: 5em;
+    font-weight: normal;
+    color: aliceblue; /*to be changed*/
+}
+
+.welcome p {
+    display: block;
+    width: 60%;
+    margin: 1% auto 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+}
