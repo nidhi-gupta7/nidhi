@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Nidhi Gupta</title>
     <link rel="icon" type="image/jpg" href="./Nidhi_Pic.jpg">
-    <link rel="stylesheet" href="./Nidhi_Gupta.css">
+    <link rel="stylesheet" href="./css/css2.css" >
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
+    <script src="./js/js.js"></script>
 </head>
+
 <body>
+    <header id="header">
+        <h1>Nidhi Gupta</h1>
+        
+        <section class="header-social-links">
 
- <section class="LeftNav">
-     <h2 class="Hidden">Heading</h2>
-     <nav>
-             <a href="./Home.html" target="_self">Home</a><br>
-             <a href="./AboutMe.html" target="_self">About Me</a><br>
-             <a href="./MyProjects.html" target="_self">My Projects</a><br>
-             <a href="./Publications.html" target="_self" class="active">Publications</a><br>
-             <a href="./Internships.html" target="_self">Internships</a><br>
-             <a href="./PositionsOfResponsibility.html" target="_self" class="LongTxt">Positions of Responsibility</a><br>
-             <a href="./Achievements&Hobbies.html" target="_self" class="LongTxt">Achievements and Hobbies</a><br>
-     </nav>
- </section>
+            <a href="#">LinkedIn</a>
+            <span> | </span>
+            <a href="#">Research Gate</a>
+            <span> | </span>
+            <a href="#">Orcid</a>
 
- <section class="RightBar">
-    <h2 class="Hidden">Heading</h2>
-    <img src="./Nidhi_Pic.jpg" alt="Nidhi's Picture"/>
-    <h1 class="AdjacentToNav">Nidhi Gupta</h1>
-</section>
+        </section>
+        
+        <nav>
 
- <!--Till here is common on all pages-->
+            <div class="dropdown">
+                <a href="./index.html" class="dropbtn">Home</a>
+                <div class="dropdown-content">
+                  <a href="./index.html#about-me">About Me</a>
+                  <a href="./index.html#technical-skills">Technical Skills</a>
+                  <a href="./index.html#education">Education</a>
+                </div>
+              </div>
+            
+            <a href="./research-experience.html" target="_self" class="dropbtn">Research Experience</a>
+            <a href="#" target="_self" class="dropbtn">Publications</a>
+            <a href="./extracurricular.html" target="_self" class="dropbtn">Extracurricular</a>
+            <a href="./blogs.html" target="_self" class="dropbtn">Blogs</a>
+            <a href="./contact.html" target="_self" class="dropbtn">Contact</a>
+        </nav>
+    </header>
+    <!--Till here is common on all pages-->
 
- <section class="AdjacentToNav">
-    <h2>Publications</h2>
+    <section class="AdjacentToNav">
+        <h2>Publications</h2>
         <ul>
             <li>
             <h3>International Conference on Materials Science & Nanotechnology</h3>
@@ -56,10 +72,17 @@
         </ul>
  </section>
 
- <!--The footer below is also common for all the pages-->
+    <!--This is also common for all the pages-->
+    
+    <!--Back to TOP BUTTON-->
+    <a href=#header id="back-to-top"><img src="./imgs/up-arrow-3.jfif" alt="Up Arrow"></a>
+    
+    <footer>
+        
+        &copy; Nidhi Gupta 2021
+    
+    </footer>
 
- <footer>
-    &copy; Nidhi Gupta 2021
-</footer>
 </body>
+
 </html>

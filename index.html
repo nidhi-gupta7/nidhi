@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1>Nidhi Gupta</h1>
         
         <section class="header-social-links">
@@ -26,12 +26,22 @@
         </section>
         
         <nav>
-            <a href="./index.html" target="_self">About</a>
-            <a href="./research-experience.html" target="_self">Research Experience</a>
-            <a href="./publications.html" target="_self">Publications</a>
-            <a href="./extracurricular.html" target="_self">Extracurricular</a>
-            <a href="./blogs.html" target="_self">Blogs</a>
-            <a href="./contact.html" target="_self">Contact</a>
+
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Home</a>
+                <div class="dropdown-content">
+                  <a href="#about-me">About Me</a>
+                  <a href="#technical-skills">Technical Skills</a>
+                  <a href="#education">Education</a>
+                </div>
+            </div>
+            
+            <a href="./research-experience.html" target="_self" class="dropbtn">Research Experience</a>
+            <a href="./publications.html" target="_self" class="dropbtn">Publications</a>
+            <a href="./extracurricular.html" target="_self" class="dropbtn">Extracurricular</a>
+            <a href="./blogs.html" target="_self" class="dropbtn">Blogs</a>
+            <a href="./contact.html" target="_self" class="dropbtn">Contact</a>
+            
         </nav>
     </header>
     <!--Till here is common on all pages-->
@@ -48,7 +58,7 @@
     </section>
 
     <section class="row-1">
-        <h2>Home</h2>
+        <h2 id="about-me">Home</h2>
         <div class="quote">
             <blockquote class="quote-1">
                 Although the universe itself isn't a conscious entity, it possesses the raw materials that, when
@@ -63,7 +73,7 @@
         <p>
             I am a Materials Science Engineer, incited by nature and its components like the living creatures, vegetative environment, flora-fauna, and numerous matters which shape our everyday life. My interest in materials science and living nature has inspired me to pursue research in biomimicry materials, which emulates the models and components of nature to solve real-world problems. Biomimetic materials designing, through a multidisciplinary approach, possess tremendous potential to shape future technology, making it more sustainable and renewable. This is my motivation to study and further improve my knowledge and understanding of the materials which shape our lives daily.
         </p>
-        <h3>Technical Skills</h3>
+        <h3 id="technical-skills">Technical Skills</h3>
         <table>
             <tr>
                 <td><strong>Softwares</strong></td>
@@ -80,7 +90,7 @@
                 <td>C, C++</td>
             </tr>
         </table>
-        <h3>Education</h3>
+        <h3 id="education">Education</h3>
         <p>
             <strong>National Institute of Technology – Nagpur</strong><br>
             B.Tech in Metallurgical and Materials
@@ -89,12 +99,17 @@
         </p>
     </section>
 
-    <!--The footer below is also common for all the pages-->
-
+    <!--This is also common for all the pages-->
+    
+    <!--Back to TOP BUTTON-->
+    <a href=#header id="back-to-top"><img src="./imgs/up-arrow.jfif" alt="Up Arrow"></a>
+    
     <footer>
         
         &copy; Nidhi Gupta 2021
+    
     </footer>
+
 </body>
 
 </html>
