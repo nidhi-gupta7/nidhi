@@ -1,0 +1,28 @@
+{
+  "name": "nidhi-profile",
+  "version": "1.0.0",
+  "description": "Nidhi's Profile",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParthGupta2510/nidhi-profile.git"
+  },
+  "author": "Parth Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParthGupta2510/nidhi-profile/issues"
+  },
+  "homepage": "https://github.com/ParthGupta2510/nidhi-profile#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap-social": "^5.1.1"
+  }
+}

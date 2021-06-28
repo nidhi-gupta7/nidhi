@@ -60,7 +60,7 @@ header nav a:hover {
 }
 
 .welcome {
-    background-image: url(../imgs/pawel-nolbert-62OK9xwVA0c-unsplash.jpg);
+    background-image: url(./imgs/pawel-nolbert-62OK9xwVA0c-unsplash.jpg);
     background-size: 100%; /*To be modified*/
     margin: 2% 0;
     padding: 10% 0 5%;
