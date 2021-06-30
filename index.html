@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Nidhi Gupta</title>
-    <link rel="icon" type="image/jpg" href="./Nidhi_Pic.jpg">
-    <link rel="stylesheet" href="./css/css2.css" >
+    <link rel="icon" type="image/jpg" href="./imgs/Nidhi_Pic.jpg">
+    <link rel="stylesheet" href="./css/css2.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
     <script src="./js/js.js"></script>
@@ -14,40 +14,44 @@
 <body>
     <header id="header">
         <h1>Nidhi Gupta</h1>
-        
+
         <section class="header-social-links">
 
-            <a href="#">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/nidhi-gupta7" target="_blank">LinkedIn</a>
             <span> | </span>
-            <a href="#">Research Gate</a>
+            <a href="#"><abbr title="Coming Soon">Research Gate</abbr></a>
             <span> | </span>
             <a href="#">Orcid</a>
 
         </section>
-        
+
         <nav>
 
             <div class="dropdown">
                 <a href="#" class="dropbtn">Home</a>
                 <div class="dropdown-content">
-                  <a href="#about-me">About Me</a>
-                  <a href="#technical-skills">Technical Skills</a>
-                  <a href="#education">Education</a>
+                    <a href="#about-me">About Me</a>
+                    <a href="#technical-skills">Technical Skills</a>
+                    <a href="#education">Academic Details</a>
                 </div>
             </div>
-            
+
             <a href="./research-experience.html" target="_self" class="dropbtn">Research Experience</a>
             <a href="./publications.html" target="_self" class="dropbtn">Publications</a>
-            <a href="./extracurricular.html" target="_self" class="dropbtn">Extracurricular</a>
+            <div class="dropdown">
+                <a href="./extracurricular.html" class="dropbtn">Extracurricular</a>
+                <div class="dropdown-content">
+                    <a href="#">Achievements &amp; Hobbies</a>
+                    <a href="#">Leadership Roles</a>
+                    <a href="#">Volunteer Work</a>
+                </div>
+            </div>
             <a href="./blogs.html" target="_self" class="dropbtn">Blogs</a>
             <a href="./contact.html" target="_self" class="dropbtn">Contact</a>
-            
+
         </nav>
     </header>
     <!--Till here is common on all pages-->
-    <section>
-
-    </section>
 
     <section class="welcome">
         <h2>Hello!</h2>
@@ -58,7 +62,7 @@
     </section>
 
     <section class="row-1">
-        <h2 id="about-me">Home</h2>
+        <h2>Home</h2>
         <div class="quote">
             <blockquote class="quote-1">
                 Although the universe itself isn't a conscious entity, it possesses the raw materials that, when
@@ -66,48 +70,116 @@
                 capable of understanding the universe ... It can know itself indirectly
             </blockquote>
             <cite>- Arthur Byron Cover</cite>
-        </div>
-        <p>
-            The increase in the level of living standards of individuals has a direct correspondence with the development of new materials with improved properties. Replacing conventional materials with the most advanced materials is vital for the efficient usage of resources. Consequently, it is essential to have profound knowledge and understanding of the selection of the materials by studying their microstructure, composition, properties, and processing techniques and developing new materials for an extensive range of applications.
-        </p>
-        <p>
-            I am a Materials Science Engineer, incited by nature and its components like the living creatures, vegetative environment, flora-fauna, and numerous matters which shape our everyday life. My interest in materials science and living nature has inspired me to pursue research in biomimicry materials, which emulates the models and components of nature to solve real-world problems. Biomimetic materials designing, through a multidisciplinary approach, possess tremendous potential to shape future technology, making it more sustainable and renewable. This is my motivation to study and further improve my knowledge and understanding of the materials which shape our lives daily.
-        </p>
-        <h3 id="technical-skills">Technical Skills</h3>
-        <table>
-            <tr>
-                <td><strong>Softwares</strong></td>
-                <td>Origin Pro, ImageJ, Autodesk Fusion 360,
-                    Adobe Photoshop & Illustrator, MS-Office</td>
-            </tr>
-            <tr>
-                <td><strong>Characterization Techniques</strong></td>
-                <td>Scanning Electron
-                    Microscopy (SEM), X-Ray Diffractometer (XRD)</td>
-            </tr>
-            <tr>
-                <td><strong>Programming languages</strong></td>
-                <td>C, C++</td>
-            </tr>
-        </table>
-        <h3 id="education">Education</h3>
-        <p>
-            <strong>National Institute of Technology – Nagpur</strong><br>
-            B.Tech in Metallurgical and Materials
-            Engineering (Grad.June2022)<br>
-            Cumulative Grade Points Average <strong>(CGPA)</strong> - 9.17/10
-        </p>
+
+            <hr class="my-story-top">
+
+            <h2 id="about-me">About Me</h2>
+
+            <hr class="my-story-bottom">
+
+            <div class="left-side">
+                <img src="./imgs/Nidhi_Pic.jpg" alt="Nidhi Potrait Pic">
+            </div>
+            <div class="right-side">
+                <p>
+                    The increase in the level of living standards of individuals has a direct correspondence with the
+                    development of new materials with improved properties. Replacing conventional materials with the
+                    most advanced materials is vital for the efficient usage of resources. Consequently, it is essential
+                    to have profound knowledge and understanding of the selection of the materials by studying their
+                    microstructure, composition, properties, and processing techniques and developing new materials for
+                    an extensive range of applications.
+                </p>
+            </div>
+            <p>
+                I am a Materials Science Engineer, incited by nature and its components like the living creatures,
+                vegetative environment, flora-fauna, and numerous matters which shape our everyday life. My interest in
+                materials science and living nature has inspired me to pursue research in biomimicry materials, which
+                emulates the models and components of nature to solve real-world problems. Biomimetic materials
+                designing, through a multidisciplinary approach, possess tremendous potential to shape future
+                technology, making it more sustainable and renewable. This is my motivation to study and further improve
+                my knowledge and understanding of the materials which shape our lives daily.
+            </p>
+            <h3 id="technical-skills" class="clear-both">Technical Skills</h3>
+            <table class="tech-skills-table">
+                <tr>
+                    <td><strong>Softwares</strong></td>
+                    <td>Origin Pro, ImageJ, Autodesk Fusion 360,
+                        Adobe Photoshop & Illustrator, MS-Office</td>
+                </tr>
+                <tr>
+                    <td><strong>Characterization Techniques</strong></td>
+                    <td>Scanning Electron
+                        Microscopy (SEM), X-Ray Diffractometer (XRD)</td>
+                </tr>
+                <tr>
+                    <td><strong>Programming languages</strong></td>
+                    <td>C, C++</td>
+                </tr>
+            </table>
+            <h3 id="education">Academic Details</h3>
+
+            <table class="academic-details">
+                <tr>
+                    <td>
+                        <img src="./imgs/vnit-logo.png" alt="VNIT LOGO">
+                    </td>
+                    <td>
+                        <strong>B.Tech in Metallurgical and Materials Engineering</strong>
+                        <br>
+                        Grad. June 2022
+                        <br>
+                        Visvesvaraya National Institute of Technology, Nagpur, India
+                        <br>
+                        Cumulative Grade Points Average <strong>(CGPA)</strong> - 9.17/10
+                        <br>
+                        <strong>Current Department Rank - 3</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="yashoda-college">
+                        <img src="./imgs/Yashoda-Logo.jpg" alt="Yashoda Clg LOGO">
+                    </td>
+                    <td>
+                        Higher Secondary School Certificate (<strong>12th Grade</strong>)
+                        <br>
+                        2018
+                        <br>
+                        Link
+                        <br>
+                        Maharashtra State Board of Secondary and Higher Secondary Education
+                        <br>
+                        Score: 89.34%
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./imgs/modern-school-logo.png" alt="Modern School LOGO">
+                    </td>
+                    <td>
+                        Secondary School Certificate (<strong>10th Grade</strong>)
+                        <br>
+                        2016
+                        <br>
+                        Link
+                        <br>
+                        Central Board of Secondary Education (CBSE)
+                        <br>
+                        Score: 94.40%
+                    </td>
+                </tr>
+            </table>
+
     </section>
 
     <!--This is also common for all the pages-->
-    
+
     <!--Back to TOP BUTTON-->
     <a href=#header id="back-to-top"><img src="./imgs/up-arrow.jfif" alt="Up Arrow"></a>
-    
+
     <footer>
-        
+
         &copy; Nidhi Gupta 2021
-    
+
     </footer>
 
 </body>
