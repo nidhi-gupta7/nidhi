@@ -7,6 +7,10 @@
 
 @media screen and (min-width:1060px) {
 
+.for-mobile {
+    display: none;
+}
+
 header h1 {
     display: block;
     width: 60%;
@@ -115,7 +119,7 @@ header nav a:hover {
 /* Till Here */
 .welcome {
     background-image: url(../imgs/home-background-pic-1.jpg);
-    background-size: 100%; /*To be modified*/
+    background-size: cover; /*To be modified*/
     margin: 2% 0;
     padding: 10% 0 5%;
 }

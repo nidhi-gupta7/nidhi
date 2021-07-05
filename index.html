@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Nidhi Gupta</title>
     <link rel="icon" type="image/jpg" href="./imgs/Nidhi_Pic.jpg">
+    <link rel="stylesheet" href="./css/css-mobile.css">
     <link rel="stylesheet" href="./css/css2.css">
-    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
     <script src="./js/js.js"></script>
 </head>
 
@@ -24,8 +24,51 @@
             <a href="#">Orcid</a>
 
         </section>
-
-        <nav>
+        <nav class="for-mobile mobile-nav">
+            <div class="button-holder">
+                <button onclick="toggleNavbar()" class="nav-button" id="nav-btn"></button>
+            </div>
+            <div class="dropdown" id="hidden-dropdown">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <ul class="sub-nav">
+                        <li>
+                            <a href="#about-me">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#technical-skills">Technical Skills</a>
+                        </li>
+                        <li>
+                            <a href="#education">Academic Details</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="./research-experience.html" target="_self">Research Experience</a>
+                    </li>
+                    <li>
+                        <a href="./mypublications.html" target="_self">Publications</a>
+                    </li>
+                    <li>
+                        <a href="./extracurricular.html">Extracurricular</a>
+                    </li>
+                    <ul class="sub-nav">
+                        <li>
+                            <a href="./extracurricular.html#achievements">Achievements &amp; Hobbies</a>
+                        </li>
+                        <li>
+                            <a href="./extracurricular.html#leadership-roles">Leadership Roles</a>
+                        </li>
+                        <li>
+                            <a href="./extracurricular.html#volunteer-work">Volunteer Work</a>
+                        </li>
+                    </ul>
+                    <li><a href="./blogs.html" target="_self">Blogs</a></li>
+                    <li><a href="./contact.html" target="_self">Contact</a></li>
+            </div>
+        </nav>
+        <nav class="non-mobile">
 
             <div class="dropdown">
                 <a href="#" class="dropbtn">Home</a>
@@ -78,7 +121,7 @@
 
             <hr class="my-story-bottom">
 
-            <div class="left-side">
+            <div class="left-side mob-center">
                 <img src="./imgs/Nidhi_Pic.jpg" alt="Nidhi Potrait Pic">
             </div>
             <div class="right-side">
@@ -119,7 +162,7 @@
             </table>
             <h3 id="education">Academic Details</h3>
 
-            <table class="academic-details">
+            <table class="academic-details non-mobile">
                 <tr>
                     <td>
                         <img src="./imgs/vnit-logo.png" alt="VNIT LOGO">
@@ -169,6 +212,47 @@
                     </td>
                 </tr>
             </table>
+            <div class="for-mobile">
+                <div class="academic-details vnit">
+                    <img src="./imgs/vnit-logo.png" alt="VNIT LOGO">
+                    <h4>B.Tech in Metallurgical and Materials Engineering</h4>
+                    <p>
+                        Grad. June 2022
+                        <br>
+                        Visvesvaraya National Institute of Technology, Nagpur, India
+                        <br>
+                        Cumulative Grade Points Average <strong>(CGPA)</strong> - 9.17/10
+                        <br>
+                        <strong>Current Department Rank - 3</strong>
+                    </p>
+                </div>
+                <div class="academic-details yashoda">
+                    <img src="./imgs/Yashoda-Logo.jpg" alt="Yashoda Clg LOGO">
+                    <h4>Higher Secondary School Certificate (12th Grade)</h4>
+                    <p>
+                        2018
+                        <br>
+                        <!-- Link -->
+                        <!-- <br> -->
+                        Maharashtra State Board of Secondary and Higher Secondary Education
+                        <br>
+                        <strong>Score: 89.34%</strong>
+                    </p>
+                </div>
+                <div class="academic-details modern">
+                    <img src="./imgs/modern-school-logo.png" alt="Modern School LOGO">
+                    <h4>Secondary School Certificate (10th Grade)</h4>
+                    <p>
+                        2016
+                        <br>
+                        <!-- Link -->
+                        <!-- <br> -->
+                        Central Board of Secondary Education (CBSE)
+                        <br>
+                        <strong>Score: 94.40%</strong>
+                    </p>
+                </div>
+            </div>
         </section>
     </section>
 

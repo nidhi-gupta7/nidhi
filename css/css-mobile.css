@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: century;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+
+    .non-mobile {
+        display: none;
+    }
+
+    header h1 {
+        font-family: serif;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        margin: 5% auto;
+        padding: 5% auto;
+        text-align: center;
+        font-size: 3em;
+        color: rgb(0, 0, 139);
+    }
+
+    .header-social-links {
+        display: block;
+        width: 95%;
+        margin: 6% auto;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .header-social-links a:link {
+        margin:0 2%;
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    .header-social-links a:visited {
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    .header-social-links a:hover {
+        color:rgba(0, 0, 0, 0.8);
+        text-decoration: underline;
+    }
+
+    .button-holder {
+        width: 100%;
+        background-color: rgb(3, 190, 252);
+    }
+
+    .nav-button {
+        width: 18vw;
+        height: 18vw;
+        background-image: url(../imgs/menu-button.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: 1px solid rgb(3, 190, 252);
+        margin: 2% 5%;
+
+    }
+    /* 
+    .nav-button:active {
+        background-image: url(../imgs/menu-button-active.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    } */
+     
+    #hidden-dropdown {
+        display: none;
+    }
+
+    .dropdown {
+        width: 100%;
+        text-align: left;
+        background-color: lightskyblue;
+        /* background-color: black; */
+        padding: 2%;
+    }
+
+    .dropdown li {
+        list-style: none;
+        font-size: 1.5em; 
+        margin: 2% 10%;
+        background-color: rgb(3, 190, 252);
+        /* background-color: lightgrey; */
+    }
+
+    .dropdown a:link {
+        color: black;
+        text-decoration: none;
+        margin-left: 10%;
+    }
+
+    .dropdown a:visited {
+        color: black;
+    }
+
+    .sub-nav {
+        width: 70%;
+        margin: 0 0 0 25%;
+    }
+
+    .sub-nav li {
+        list-style-type: square;
+        font-size: 1.2em;
+    }
+
+    .sub-nav a:link {
+        margin: 0;
+    }
+
+    .welcome {
+        width: 100vw;
+        height: 66.66vw;
+        background-image: url(../imgs/home-background-pic-1.jpg);
+        background-size: cover;
+    }
+
+    .welcome h2 {
+        color: white;
+        font-size: 2em;
+        width: 90%;
+        padding: 3%;
+        margin: 5% auto;
+        text-align: center;
+    }
+
+    .welcome p {
+        display: block;
+        width: 60%;
+        margin: 1% auto 0;
+        text-align: center;
+        font-size: 1.5em;
+        color: #ffffff;
+        padding-top: 5%;
+    }
+
+    blockquote {
+        display: block;
+        width: 80%;
+        margin: 5% auto;
+        text-align: justify;
+        font-family: "Comic sans ms";
+        font-weight: bolder;
+        font-size: 1em;
+        padding: 0 3%;
+        border-left: rgb(4, 4, 160) 5px solid;
+        border-right: rgb(4, 4, 160) 5px solid;
+        font-style: italic;
+    }
+    
+    blockquote::before {
+        content: open-quote;
+    }
+    
+    blockquote::after {
+        content: close-quote;
+    }
+    
+    .quote cite {
+        margin: 3% 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: "comic sans ms";
+        font-weight: bolder;
+        font-size: 1.3em;
+    }
+
+    .my-story-top {
+        margin-top: 5%;
+    }
+    
+    .my-story-bottom {
+        margin-bottom: 5%;
+    }
+    
+    .row-1 {
+        display: block;
+        width: 100%;
+        margin: 2% auto;
+    }
+    
+    .row-1 h2 {
+        display: block;
+        width: 100%;
+        margin: 4% auto;
+        text-align: center;
+        font-size: 2em;
+        padding: 1%;
+    }
+    
+    .row-1 p {
+        display: block;
+        width: 90%;
+        margin: 2% auto;
+        text-align: justify;
+        font-size: 1em;
+        padding: 3% 0;
+    }
+
+    .mob-center {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .mob-center img {
+        width: 60%;
+        border-radius: 100%;
+    }
+
+    h3 {
+        display: block;
+        width: 80%;
+        margin: 1% 5%;
+        padding: 3% 0;
+        text-align: left;
+        font-size: 1.7em;
+        text-decoration: underline;
+    }
+
+    .tech-skills-table {
+        font-size: 1em;
+        margin: 2%;
+    }
+    
+    .tech-skills-table, .tech-skills-table th, .tech-skills-table td {
+        border: 1px solid black;
+      }
+    
+    .tech-skills-table td {
+        padding: 2%;
+    }
+    
+    .tech-skills-table tr:hover {
+        background-color: #f5f5f5;
+    }
+    
+    .tech-skills-table td:first-child, .tech-skills-table th:first-child {
+        width: 40%;
+    }
+    
+    .academic-details {
+        text-align: center;
+        margin: 5%;
+        line-height: 1.5em;
+    }
+
+    .academic-details img {
+        margin: 5% auto;
+        width: 50%;
+    }
+
+    .yashoda img {
+        width: 60%;
+        margin-left: 1%;
+    }
+
+    .modern img {
+        width: 45%;
+        margin-left: 1%;
+    }    
+
+    .academic-details h4 {
+        font-size: 0.9em;
+    }
+
+    .academic-details p {
+        margin-top: 0;
+        text-align: center;
+        font-size: 0.7em;
+        width: 90%;
+    }
+
+
+
+
+
+
+
+    footer {
+        margin-top: 10%;
+    }
+
+
+    #back-to-top {
+        float: right;
+        position: fixed;
+        right: -320px;
+        bottom: 0;
+    }
+
+    #back-to-top img {
+        width: 20%;
+    }
+    
+    abbr {
+        text-decoration: none;
+    }
+    
+    strong {
+        font-weight: bolder;
+    }
+}
