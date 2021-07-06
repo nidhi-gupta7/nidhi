@@ -65,12 +65,12 @@
         margin: 2% 5%;
 
     }
-    /* 
+    
     .nav-button:active {
         background-image: url(../imgs/menu-button-active.png);
         background-size: cover;
         background-repeat: no-repeat;
-    } */
+    }
      
     #hidden-dropdown {
         display: none;
