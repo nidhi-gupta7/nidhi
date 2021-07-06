@@ -437,6 +437,14 @@ h3 {
     font-weight: bold;
 }
 
+.div-email-id button {
+    width: 10%;
+    font-size: 0.9em;
+    border-radius: 10%;
+    padding: 1%;
+    margin: 0 2%;
+}
+
 /* Styling for BLOGS page */
 
 .blogs-coming-soon p { 
