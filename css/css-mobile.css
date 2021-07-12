@@ -489,4 +489,8 @@
     strong {
         font-weight: bolder;
     }
+
+    .hide-content {
+        display: none;
+    }
 }
