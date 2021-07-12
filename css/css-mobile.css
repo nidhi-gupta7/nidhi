@@ -1,496 +1,497 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: century;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: century;
 }
 
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .non-mobile {
+    display: none;
+  }
 
-    .non-mobile {
-        display: none;
-    }
+  header h1 {
+    font-family: serif;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    margin: 5% auto;
+    padding: 5% auto;
+    text-align: center;
+    font-size: 3em;
+    color: rgb(0, 0, 139);
+  }
 
-    header h1 {
-        font-family: serif;
-        font-weight: 400;
-        display: block;
-        width: 100%;
-        margin: 5% auto;
-        padding: 5% auto;
-        text-align: center;
-        font-size: 3em;
-        color: rgb(0, 0, 139);
-    }
+  .header-social-links {
+    display: block;
+    width: 95%;
+    margin: 6% auto;
+    text-align: center;
+    font-size: 1.2em;
+  }
 
-    .header-social-links {
-        display: block;
-        width: 95%;
-        margin: 6% auto;
-        text-align: center;
-        font-size: 1.2em;
-    }
+  .header-social-links a:link {
+    margin: 0 2%;
+    color: #000000;
+    text-decoration: none;
+  }
 
-    .header-social-links a:link {
-        margin:0 2%;
-        color: #000000;
-        text-decoration: none;
-    }
-    
-    .header-social-links a:visited {
-        color: #000000;
-        text-decoration: none;
-    }
-    
-    .header-social-links a:hover {
-        color:rgba(0, 0, 0, 0.8);
-        text-decoration: underline;
-    }
+  .header-social-links a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
 
-    .button-holder {
-        width: 100%;
-        /* background-color: rgb(3, 190, 252); */
-        background-color: grey;
-    }
+  .header-social-links a:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+  }
 
-    .nav-button {
-        width: 18vw;
-        height: 18vw;
-        background-image: url(../imgs/menu-button.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        /* border: 1px solid rgb(3, 190, 252); */
-        border: 1px solid grey;
-        margin: 2% 5%;
+  .button-holder {
+    width: 100%;
+    /* background-color: rgb(3, 190, 252); */
+    background-color: grey;
+  }
 
-    }
-    
-    .nav-button:active {
-        background-image: url(../imgs/menu-button-active.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-     
-    #hidden-dropdown {
-        display: none;
-    }
+  .nav-button {
+    width: 18vw;
+    height: 18vw;
+    background-image: url(../imgs/menu-button.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* border: 1px solid rgb(3, 190, 252); */
+    border: 1px solid grey;
+    margin: 2% 5%;
+  }
 
-    .dropdown {
-        width: 100%;
-        text-align: left;
-        /* background-color: lightskyblue; */
-        background-color: black;
-        padding: 2%;
-    }
+  .nav-button:active {
+    background-image: url(../imgs/menu-button-active.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-    .dropdown li {
-        list-style: none;
-        font-size: 1.5em; 
-        margin: 2% 5%;
-        /* background-color: rgb(3, 190, 252); */
-        background-color: grey;
-    }
+  #hidden-dropdown {
+    display: none;
+  }
 
-    .dropdown a:link {
-        color: white;
-        text-decoration: none;
-        margin-left: 5%;
-    }
+  .dropdown {
+    width: 100%;
+    text-align: left;
+    /* background-color: lightskyblue; */
+    background-color: black;
+    padding: 2%;
+  }
 
-    .dropdown a:visited {
-        display: block;
-        width: 100%;
-        color: white;
-    }
+  .dropdown li {
+    list-style: none;
+    font-size: 1.5em;
+    margin: 2% 5%;
+    /* background-color: rgb(3, 190, 252); */
+    background-color: grey;
+  }
 
-    .dropdown a:active {
-        text-decoration: white underline 2px;
-    }
+  .dropdown a:link {
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+  }
 
-    .sub-nav {
-        width: 70%;
-        margin: 0 0 0 25%;
-    }
+  .dropdown a:visited {
+    display: block;
+    width: 100%;
+    color: white;
+  }
 
-    .sub-nav li {
-        list-style-type: square;
-        font-size: 1.2em;
-    }
+  .dropdown a:active {
+    text-decoration: white underline 2px;
+  }
 
-    .sub-nav a:link {
-        margin-left: 5%;
-    }
+  .sub-nav {
+    width: 70%;
+    margin: 0 0 0 25%;
+  }
 
-    .welcome {
-        width: 100vw;
-        height: 66.66vw;
-        background-image: url(../imgs/home-background-pic-1.jpg);
-        background-size: cover;
-    }
+  .sub-nav li {
+    list-style-type: square;
+    font-size: 1.2em;
+  }
 
-    .welcome h2 {
-        color: white;
-        font-size: 2em;
-        width: 90%;
-        padding: 3%;
-        margin: 5% auto;
-        text-align: center;
-    }
+  .sub-nav a:link {
+    margin-left: 5%;
+  }
 
-    .welcome p {
-        display: block;
-        width: 60%;
-        margin: 1% auto 0;
-        text-align: center;
-        font-size: 1.5em;
-        color: #ffffff;
-        padding-top: 5%;
-    }
+  .welcome {
+    width: 100vw;
+    height: 66.66vw;
+    background-image: url(../imgs/home-background-pic-1.jpg);
+    background-size: cover;
+  }
 
-    blockquote {
-        display: block;
-        width: 80%;
-        margin: 5% auto;
-        text-align: justify;
-        font-family: "Comic sans ms";
-        font-weight: bolder;
-        font-size: 1em;
-        padding: 0 3%;
-        border-left: rgb(4, 4, 160) 5px solid;
-        border-right: rgb(4, 4, 160) 5px solid;
-        font-style: italic;
-    }
-    
-    blockquote::before {
-        content: open-quote;
-    }
-    
-    blockquote::after {
-        content: close-quote;
-    }
-    
-    .quote cite {
-        margin: 3% 0;
-        display: block;
-        width: 100%;
-        text-align: center;
-        font-family: "comic sans ms";
-        font-weight: bolder;
-        font-size: 1.3em;
-    }
+  .welcome h2 {
+    color: white;
+    font-size: 2em;
+    width: 90%;
+    padding: 3%;
+    margin: 5% auto;
+    text-align: center;
+  }
 
-    .my-story-top {
-        margin-top: 5%;
-    }
-    
-    .my-story-bottom {
-        margin-bottom: 5%;
-    }
-    
-    .row-1 {
-        display: block;
-        width: 100%;
-        margin: 2% auto;
-    }
-    
-    .row-1 h2 {
-        display: block;
-        width: 100%;
-        margin: 4% auto;
-        text-align: center;
-        font-size: 2em;
-        padding: 1%;
-    }
-    
-    .row-1 p {
-        display: block;
-        width: 90%;
-        margin: 2% auto;
-        text-align: justify;
-        font-size: 1em;
-        padding: 3% 0;
-    }
+  .welcome p {
+    display: block;
+    width: 60%;
+    margin: 1% auto 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+    padding-top: 5%;
+  }
 
-    .mob-center {
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
+  blockquote {
+    display: block;
+    width: 80%;
+    margin: 5% auto;
+    text-align: justify;
+    font-family: "Comic sans ms";
+    font-weight: bolder;
+    font-size: 1em;
+    padding: 0 3%;
+    border-left: rgb(4, 4, 160) 5px solid;
+    border-right: rgb(4, 4, 160) 5px solid;
+    font-style: italic;
+  }
 
-    .mob-center img {
-        width: 60%;
-        border-radius: 100%;
-    }
+  blockquote::before {
+    content: open-quote;
+  }
 
-    h3 {
-        display: block;
-        width: 80%;
-        margin: 1% 5%;
-        padding: 3% 0;
-        text-align: left;
-        font-size: 1.7em;
-        text-decoration: underline;
-    }
+  blockquote::after {
+    content: close-quote;
+  }
 
-    .tech-skills-table {
-        font-size: 1em;
-        margin: 2%;
-    }
-    
-    .tech-skills-table, .tech-skills-table th, .tech-skills-table td {
-        border: 1px solid black;
-      }
-    
-    .tech-skills-table td {
-        padding: 2%;
-    }
-    
-    .tech-skills-table tr:hover {
-        background-color: #f5f5f5;
-    }
-    
-    .tech-skills-table td:first-child, .tech-skills-table th:first-child {
-        width: 40%;
-    }
-    
-    .academic-details {
-        text-align: center;
-        margin: 5%;
-        line-height: 1.5em;
-    }
+  .quote cite {
+    margin: 3% 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "comic sans ms";
+    font-weight: bolder;
+    font-size: 1.3em;
+  }
 
-    .academic-details img {
-        margin: 5% auto;
-        width: 50%;
-    }
+  .my-story-top {
+    margin-top: 5%;
+  }
 
-    .yashoda img {
-        width: 60%;
-        margin-left: 1%;
-    }
+  .my-story-bottom {
+    margin-bottom: 5%;
+  }
 
-    .modern img {
-        width: 45%;
-        margin-left: 1%;
-    }    
+  .row-1 {
+    display: block;
+    width: 100%;
+    margin: 2% auto;
+  }
 
-    .academic-details h4 {
-        font-size: 0.9em;
-    }
+  .row-1 h2 {
+    display: block;
+    width: 100%;
+    margin: 4% auto;
+    text-align: center;
+    font-size: 2em;
+    padding: 1%;
+  }
 
-    .academic-details p {
-        margin-top: 0;
-        text-align: center;
-        font-size: 0.7em;
-        width: 90%;
-    }
+  .row-1 p {
+    display: block;
+    width: 90%;
+    margin: 2% auto;
+    text-align: justify;
+    font-size: 1em;
+    padding: 3% 0;
+  }
 
-    /* Styling of Research Experience page */
+  .mob-center {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-    .mob-research {
-        width: 90%;
-        text-align: center;
-        margin: 5% auto;
-    }
+  .mob-center img {
+    width: 60%;
+    border-radius: 100%;
+  }
 
-    .mob-research img {
-        width: 50%;
-        margin: 10% 0;
-    }
+  h3 {
+    display: block;
+    width: 80%;
+    margin: 1% 5%;
+    padding: 3% 0;
+    text-align: left;
+    font-size: 1.7em;
+    text-decoration: underline;
+  }
 
-    .research-rwth img {
-        width: 80%;      
-    }
+  .tech-skills-table {
+    font-size: 1em;
+    margin: 2%;
+  }
 
-    .mob-research h4 {
-        font-size: 1em;
-    }
+  .tech-skills-table,
+  .tech-skills-table th,
+  .tech-skills-table td {
+    border: 1px solid black;
+  }
 
-    .mob-research p {
-        text-align: center;
-        font-size: 0.8em;
-        line-height: 1.9em;
-    }
+  .tech-skills-table td {
+    padding: 2%;
+  }
 
+  .tech-skills-table tr:hover {
+    background-color: #f5f5f5;
+  }
 
-    /* Styling of Publications page */
+  .tech-skills-table td:first-child,
+  .tech-skills-table th:first-child {
+    width: 40%;
+  }
 
-    .publication-list li {
-        margin: 5% auto;
-        padding: 5% auto;
-    }
+  .academic-details {
+    text-align: center;
+    margin: 5%;
+    line-height: 1.5em;
+  }
 
-    .non-home h3 {
-        display: block;
-        width: 90%;
-        font-size: 1.2em;
-        text-align: center;
-        margin: 3% auto;
-        padding: 5% auto;
-    }
-    
-    .left-align {
-        float: left;
-        font-size: 1em;
-        margin-left: 5%;
-    }
-    
-    .right-align {
-        float: right;
-        font-size: 1.3em;
-        margin-right: 10%;
-    }
-    
-    .right-align a:link {
-        color: rgb(0, 0, 139);
-        text-decoration: none;
-    }
-    
-    .right-align a:visited {
-        color: rgb(0, 0, 139);
-        text-decoration: none;
-    }
-    
-    .right-align a:hover, .right-align a:focus {
-        text-decoration: none;
-        border: 3px solid black;
-    }
+  .academic-details img {
+    margin: 5% auto;
+    width: 50%;
+  }
 
-    .non-home p {
-        display: block;
-        width: 90%;
-        font-size: 0.9em;
-        line-height: 1.5em;
-        padding-top: 5%;
-    }
+  .yashoda img {
+    width: 60%;
+    margin-left: 1%;
+  }
 
+  .modern img {
+    width: 45%;
+    margin-left: 1%;
+  }
 
-    /* Styling for EXTRACURRICULAR page */
+  .academic-details h4 {
+    font-size: 0.9em;
+  }
 
-    .extracurricular-section {
-        font-size: 1em;
-    }
+  .academic-details p {
+    margin-top: 0;
+    text-align: center;
+    font-size: 0.7em;
+    width: 90%;
+  }
 
-    #achievements {
-        font-size: 1.5em;
-        font-family: serif;
-        padding: 5% 2%;
-    }
-    
-    .extracurricular-section ul {
-        margin-left: 5%;
-    }
-    
-    .extracurricular-section ul li {
-        list-style-type: square;
-        padding: 2%;
-        width: 80%;
-        margin: 2% 0;
-        margin-left: 5%;
-    }
-    
-    .right-align-certificate {
-        float: right;
-        font-size: 1.1em;
-        margin-right: -40px;
-    }
-    
-    .right-align-certificate a:link {
-        color: rgb(0, 0, 139);
-        text-decoration: none;
-    }
-    
-    .right-align-certificate a:visited {
-        color: rgb(0, 0, 139);
-        text-decoration: none;
-    }
-    
-    .right-align-certificate a:hover, .right-align-certificate a:focus {
-        text-decoration: none;
-        border: 3px solid black;
-    }
+  /* Styling of Research Experience page */
 
-    /* Contact page Styling */
+  .mob-research {
+    width: 90%;
+    text-align: center;
+    margin: 5% auto;
+  }
 
-    .contact-msg p {
-        display: block;
-        width: 85%;
-        margin: 3% auto;
-        text-align: justify;
-        font-size: 0.9em;
-    }
+  .mob-research img {
+    width: 50%;
+    margin: 10% 0;
+  }
 
-    .contact-form {
-        display: block;
-        margin: 0 auto;
-    }
+  .research-rwth img {
+    width: 80%;
+  }
 
-    .div-email-id {
-        display: block;
-        width: 90%;
-        margin: 5% auto 0;
-        font-size: 1.3em;
-        text-align: center;
-        line-height: 1.5em;
-    }
+  .mob-research h4 {
+    font-size: 1em;
+  }
 
-    .email-id {
-        color: rgb(0, 0, 139);
-        font-weight: bold;
-    }
+  .mob-research p {
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.9em;
+  }
 
-    .div-email-id button {
-        width: 20%;
-        font-size: 0.9em;
-        border-radius: 10%;
-        padding: 1%;
-        margin: 2% auto;
-    }
+  /* Styling of Publications page */
 
-    /* Styling for BLOGS page */
+  .publication-list li {
+    margin: 5% auto;
+    padding: 5% auto;
+  }
 
-    .blogs-coming-soon p { 
-        display: block;
-        width: 90%;
-        margin: 5% auto 25%;
-        text-align: center;
-        font-size: 1.5em;
-        padding: 10%;   
-    }
+  .non-home h3 {
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 3% auto;
+    padding: 5% auto;
+  }
 
-    /* Footer Styling */
+  .left-align {
+    float: left;
+    font-size: 1em;
+    margin-left: 5%;
+  }
 
-    footer {
-        margin-top: 20%;
-    }
+  .right-align {
+    float: right;
+    font-size: 1.3em;
+    margin-right: 10%;
+  }
 
-    /* MISC Common Styling classes */
+  .right-align a:link {
+    color: rgb(0, 0, 139);
+    text-decoration: none;
+  }
 
-    .clear-both {
-        clear: both;
-    }
+  .right-align a:visited {
+    color: rgb(0, 0, 139);
+    text-decoration: none;
+  }
 
-    #back-to-top {
-        float: right;
-        position: fixed;
-        right: -340px;
-        bottom: 0;
-    }
+  .right-align a:hover,
+  .right-align a:focus {
+    text-decoration: none;
+    border: 3px solid black;
+  }
 
-    #back-to-top img {
-        width: 15%;
-    }
-    
-    abbr {
-        text-decoration: none;
-    }
-    
-    strong {
-        font-weight: bolder;
-    }
+  .non-home p {
+    display: block;
+    width: 90%;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding-top: 5%;
+  }
 
-    .hide-content {
-        display: none;
-    }
+  /* Styling for EXTRACURRICULAR page */
+
+  .extracurricular-section {
+    font-size: 1em;
+  }
+
+  #achievements {
+    font-size: 1.5em;
+    font-family: serif;
+    padding: 5% 2%;
+  }
+
+  .extracurricular-section ul {
+    margin-left: 5%;
+  }
+
+  .extracurricular-section ul li {
+    list-style-type: square;
+    padding: 2%;
+    width: 80%;
+    margin: 2% 0;
+    margin-left: 5%;
+  }
+
+  .right-align-certificate {
+    float: right;
+    font-size: 1.1em;
+    margin-right: -40px;
+  }
+
+  .right-align-certificate a:link {
+    color: rgb(0, 0, 139);
+    text-decoration: none;
+  }
+
+  .right-align-certificate a:visited {
+    color: rgb(0, 0, 139);
+    text-decoration: none;
+  }
+
+  .right-align-certificate a:hover,
+  .right-align-certificate a:focus {
+    text-decoration: none;
+    border: 3px solid black;
+  }
+
+  /* Contact page Styling */
+
+  .contact-msg p {
+    display: block;
+    width: 85%;
+    margin: 3% auto;
+    text-align: justify;
+    font-size: 0.9em;
+  }
+
+  .contact-form {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .div-email-id {
+    display: block;
+    width: 90%;
+    margin: 5% auto 0;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  .email-id {
+    color: rgb(0, 0, 139);
+    font-weight: bold;
+  }
+
+  .div-email-id button {
+    width: 20%;
+    font-size: 0.9em;
+    border-radius: 10%;
+    padding: 1%;
+    margin: 2% auto;
+  }
+
+  /* Styling for BLOGS page */
+
+  .blogs-coming-soon p {
+    display: block;
+    width: 90%;
+    margin: 5% auto 25%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10%;
+  }
+
+  /* Footer Styling */
+
+  footer {
+    margin-top: 20%;
+  }
+
+  /* MISC Common Styling classes */
+
+  .clear-both {
+    clear: both;
+  }
+
+  #back-to-top {
+    float: right;
+    position: fixed;
+    right: -340px;
+    bottom: 0;
+  }
+
+  #back-to-top img {
+    width: 15%;
+  }
+
+  abbr {
+    text-decoration: none;
+  }
+
+  strong {
+    font-weight: bolder;
+  }
+
+  .hide-content {
+    display: none;
+  }
 }
