@@ -5,7 +5,7 @@
     font-family: century;
 }
 
-@media screen and (min-width: 300px) and (max-width: 600px) {
+@media screen and (min-width: 300px) and (max-width: 700px) {
 
     .non-mobile {
         display: none;
