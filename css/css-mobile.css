@@ -31,9 +31,9 @@
   }
 
   .header-social-links a:link {
-    margin: 0 2%;
     color: #000000;
     text-decoration: none;
+    cursor: default;
   }
 
   .header-social-links a:visited {
@@ -41,9 +41,10 @@
     text-decoration: none;
   }
 
-  .header-social-links a:hover {
+  #social-link:hover {
     color: rgba(0, 0, 0, 0.8);
     text-decoration: underline;
+    cursor: pointer;
   }
 
   .button-holder {
@@ -451,13 +452,18 @@
 
   /* Styling for BLOGS page */
 
-  .blogs-coming-soon p {
-    display: block;
-    width: 90%;
-    margin: 5% auto 25%;
-    text-align: center;
-    font-size: 1.5em;
-    padding: 10%;
+  .gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .gallery img {
+    width: 70%;
+    height: auto;
+    margin: 2%;
+    border: solid 2px black;
   }
 
   /* Footer Styling */
@@ -493,5 +499,10 @@
 
   .hide-content {
     display: none;
+  }
+
+  .not-available:hover {
+    opacity: 1;
+    text-decoration: none;
   }
 }
